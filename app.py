@@ -59,6 +59,12 @@ def new_releases():
     result = get_jiosaavn_data(url)
     return jsonify(result)
 
+@app.route('/api/vintage', methods=['GET'])
+def new_releases():
+    url = "https://www.jiosaavn.com/featured/best-of-retro/IFTYFbu2anRuOxiEGmm6lQ__"
+    result = get_jiosaavn_data(url)
+    return jsonify(result)
+
 # 6. Default route to check if server is live
 @app.route('/', methods=['GET'])
 def home():
