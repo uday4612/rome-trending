@@ -60,7 +60,7 @@ def new_releases():
     return jsonify(result)
 
 @app.route('/api/vintage', methods=['GET'])
-def new_releases():
+def vintage():
     url = "https://www.jiosaavn.com/featured/best-of-retro/IFTYFbu2anRuOxiEGmm6lQ__"
     result = get_jiosaavn_data(url)
     return jsonify(result)
